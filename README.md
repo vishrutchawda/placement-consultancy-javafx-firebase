@@ -56,8 +56,8 @@ Data flow: Event → Async Firebase → Bind to ObservableList<TableView> → Re
 
 ## Installation
 1. **Clone or Download**:
-  git clone https://github.com/vishrutchawda/placement-consultancy-javafx-firebase.git
-  cd placement-consultancy-javafx-firebase
+git clone https://github.com/vishrutchawda/placement-consultancy-javafx-firebase.git
+cd placement-consultancy-javafx-firebase
 
 2. **Firebase Setup**:
 - Create Firebase project, enable Firestore in test mode.
