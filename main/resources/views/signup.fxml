@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.Insets?>
+
+<VBox xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.placement.controllers.SignUpController"
+      spacing="15" alignment="CENTER" prefWidth="500" styleClass="root"> <!-- Reduced spacing from 30 to 15 -->
+    <padding>
+        <Insets top="50" right="50" bottom="50" left="50" />
+    </padding>
+
+    <!-- Logo -->
+    <ImageView fitWidth="150" fitHeight="150">
+        <image>
+            <Image url="@/images/logo.png" />
+        </image>
+    </ImageView>
+
+    <!-- Sign Up Text -->
+    <Text text="Create Your Account" style="-fx-font-size: 32; -fx-fill: white; -fx-font-weight: bold; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.3), 5, 0, 0, 2);" />
+
+    <!-- Sign Up Form -->
+    <VBox style="-fx-background-color: #ffffff; -fx-background-radius: 20; -fx-padding: 30; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 10, 0, 0, 5);" spacing="15"> <!-- Reduced spacing from 20 to 15 -->
+        <GridPane hgap="15" vgap="10" alignment="CENTER"> <!-- Reduced vgap from 15 to 10 -->
+            <Label text="Name:" GridPane.rowIndex="0" GridPane.columnIndex="0" styleClass="label" />
+            <TextField fx:id="nameField" GridPane.rowIndex="0" GridPane.columnIndex="1" prefWidth="300" promptText="Enter your name" styleClass="text-field" />
+
+            <Label text="Email:" GridPane.rowIndex="1" GridPane.columnIndex="0" styleClass="label" />
+            <TextField fx:id="emailField" GridPane.rowIndex="1" GridPane.columnIndex="1" prefWidth="300" promptText="Enter your email" styleClass="text-field" />
+
+            <Label text="Password:" GridPane.rowIndex="2" GridPane.columnIndex="0" styleClass="label" />
+            <PasswordField fx:id="passwordField" GridPane.rowIndex="2" GridPane.columnIndex="1" prefWidth="300" promptText="Enter your password" styleClass="text-field" />
+
+            <Label text="Confirm Password:" GridPane.rowIndex="3" GridPane.columnIndex="0" styleClass="label" />
+            <PasswordField fx:id="confirmPasswordField" GridPane.rowIndex="3" GridPane.columnIndex="1" prefWidth="300" promptText="Confirm your password" styleClass="text-field" />
+
+            <Label text="Role:" GridPane.rowIndex="4" GridPane.columnIndex="0" styleClass="label" />
+            <ComboBox fx:id="roleCombo" GridPane.rowIndex="4" GridPane.columnIndex="1" prefWidth="300" promptText="Select your role" styleClass="combo-box" />
+        </GridPane>
+
+        <!-- Company Field Container -->
+        <VBox fx:id="companyBox" spacing="5" visible="false"> <!-- Reduced spacing from 15 to 5 -->
+            <Label text="Company Name:" styleClass="label" />
+            <TextField fx:id="companyField" prefWidth="300" promptText="Enter your company name" styleClass="text-field" />
+        </VBox>
+
+        <VBox alignment="CENTER">
+            <Button text="Sign Up" onAction="#handleSignUp" styleClass="action-button" defaultButton="true">
+                <graphic>
+                    <ImageView fitWidth="20" fitHeight="20">
+                        <image>
+                            <Image url="@/images/signup-icon.png" />
+                        </image>
+                    </ImageView>
+                </graphic>
+            </Button>
+        </VBox>
+    </VBox>
+
+    <!-- Login Link -->
+    <Hyperlink text="Already have an account? Log In" onAction="#handleLoginRedirect" styleClass="custom-hyperlink" />
+</VBox>

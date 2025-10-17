@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "placement-consultancy-d75be",
+  "private_key_id": "23e52dfb21af8ae3f21f79aedf06eced2be64fe3",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDN0FB0P/5l3BUJ\nCob6m+nv+7f9jNhCxXiWC2lto5tYjB0u2m44raxMal881Y+iqIgB9tic/JE62lJD\nbBJp4E+/LWbbieyCtyoOXSWJVD4PO5MQl1vGgLNfuwqMXWEozq6yxZPeie43NX9L\nhJjHPrXIY0kL90jaUOOs6lxWBVi7YkmKjTwhCqMe6TwqpXnygqAdOrbGsjmuao83\ncRKOG513mjpN9NRolPmpE4yBNdfsn3mGxzczVeZizqxLrTJYJp7OsO43BBOOFs5o\nWhz/6I4VYfjcBmE++TdF0D826sl/ZuXJMIKuwwMqB3G5PlgUcsgCsxL69qjlCtfp\nDgzu87W7AgMBAAECggEADykOnBmQqDkndYSIf9JXT52npm4nCfgY01ig2fooucOM\nbMSbROKKJBDb1hPXIkCu0BI6T4oNOpwVXjEKRDFJPoheIMLOoKxUVT2IQ87oSV/2\ni8zSblNRozYYZ1GDlClxVerW4xge64MtzsbEKD0Wz918Zny/KZG2y6hxx8ZaDGdl\nuU08ZadXAQhhMo76gc2+CmhCGJM/Ih2jDziFCQGjHOJuNbQ+3tcE+NCqoSmdzjmS\nPS12P8YHPBzokT7dRFN28ojJA09nslJhMMcGrViCGSKbRgm/cSuMUja5CD3ApMHE\nvl+xlsnuzdNMKIdUCEdtXDurt1V2iFJy1WGk6dSLAQKBgQDmYV+1D/rWC4qDbpFZ\nyfxRisxjvosVHwi9feif14+MLsRwBlxaEB7L8SiJLxeFGrOpD9I1i0wnJCoDIZIx\n+EwQ+RrD7qDzMb5VQqKrzr747atLRXfcegSZCM9rqbBff9/KeD33UQN29lN3cWY5\n2N8Bu63SGZvZ8Mw4TTKJ2j3quwKBgQDks499NYHHmAeOLoiTMN0SS8egOaNGG8o5\nnfrfSiVKPLBmO3sRr/CN3qYT2TmAubg+ufL+x8Lzw1DCL61cveOpHjmFJM8Khuyc\nTC2RXHpL6exgE+rYFUTuiaDo0YPdtUO7kFj5DwZWT26drH61BDdxV5cxgGF4gDeP\n8pajN9gxAQKBgCHu078ClIq0dnl3brdP9fc4v3Qtm6THxmzKv9nTUVRviwWJGk81\nsqONaNAT/J3hWfcb2nWCh/v36qw9ZKAxl1qkplmXq2NGv2clgnpV4HEf6KwUllwG\nKOk1j/+mpdDbL+ZNoars5tq923trW4hHtkk2EJsypG8MdbgRPtFpMNeDAoGBAJP3\n4SSfk+IxaOIDFXY2LTKDORtfb1YS8NoqboA9lrbbYT4jydJ9xOPlZAp/hwbUInLj\nGGbjlCzm979L3Zydd0iaN5j/Yb1r4naViv37mVy4cqkO+ejoifrTrPo1ZF3zw2j9\nUbOClxUMu4Lkce5oVf7NLxNl/qpaOpi12eSsYwIBAoGACSQAtnsxW3X5fZ3P9SX0\nStT56DCIXrEmcG5h8OCIqWLVKKT9cEOIRvyp6w2qw71Er5C9XcZakJUpjAj3kUjP\nIX/qKoEC/n2bgS7K22f5pECIsEaO9DMjqWa0QhUZXPUTdrX/Pigy6pte2cz4WvUT\nToYlfVRrZJvc0om8+i94adM=\n-----END PRIVATE KEY-----\n",
+  "client_email": "firebase-adminsdk-fbsvc@placement-consultancy-d75be.iam.gserviceaccount.com",
+  "client_id": "101519057152406008515",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-fbsvc%40placement-consultancy-d75be.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}

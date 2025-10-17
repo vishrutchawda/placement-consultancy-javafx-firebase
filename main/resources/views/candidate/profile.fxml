@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.image.*?>
+
+<StackPane xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.placement.controllers.candidate.ProfileController">
+    <VBox spacing="25" alignment="TOP_CENTER" styleClass="root" prefWidth="700">
+        <padding>
+            <Insets top="40" right="40" bottom="40" left="40" />
+        </padding>
+
+        <!-- Header with Icon -->
+        <HBox spacing="10" alignment="CENTER">
+            <ImageView fitWidth="40" fitHeight="40">
+                <image>
+                    <Image url="@/images/profile-icon.png" />
+                </image>
+            </ImageView>
+            <Text text="Your Profile" style="-fx-font-size: 30; -fx-fill: white; -fx-font-weight: bold; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.3), 5, 0, 0, 2);" />
+        </HBox>
+
+        <!-- Profile Card -->
+        <VBox style="-fx-background-color: #ffffff; -fx-background-radius: 20; -fx-padding: 30; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 10, 0, 0, 5);" spacing="20">
+            <GridPane hgap="20" vgap="20" alignment="CENTER_LEFT">
+                <Label text="Name:" GridPane.rowIndex="0" GridPane.columnIndex="0" styleClass="label" />
+                <TextField fx:id="nameField" GridPane.rowIndex="0" GridPane.columnIndex="1" prefWidth="350" promptText="Enter your name" styleClass="text-field" />
+
+                <Label text="Email:" GridPane.rowIndex="1" GridPane.columnIndex="0" styleClass="label" />
+                <TextField fx:id="emailField" GridPane.rowIndex="1" GridPane.columnIndex="1" prefWidth="350" promptText="Enter your email" styleClass="text-field" />
+
+                <Label text="Marks:" GridPane.rowIndex="2" GridPane.columnIndex="0" styleClass="label" />
+                <TextField fx:id="marksField" GridPane.rowIndex="2" GridPane.columnIndex="1" prefWidth="350" promptText="Enter your marks (0-100)" styleClass="text-field" />
+
+                <Label text="Qualification:" GridPane.rowIndex="3" GridPane.columnIndex="0" styleClass="label" />
+                <ComboBox fx:id="qualificationCombo" GridPane.rowIndex="3" GridPane.columnIndex="1" prefWidth="350" promptText="Select your qualification" styleClass="combo-box" />
+            </GridPane>
+
+            <!-- Action Buttons -->
+            <HBox spacing="20" alignment="CENTER">
+                <Button text="Upload CV" onAction="#handleUploadCV" styleClass="action-button">
+                    <graphic>
+                        <ImageView fitWidth="20" fitHeight="20">
+                            <image>
+                                <Image url="@/images/upload-icon.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </Button>
+                <Button text="Save Profile" onAction="#handleSaveProfile" styleClass="action-button">
+                    <graphic>
+                        <ImageView fitWidth="20" fitHeight="20">
+                            <image>
+                                <Image url="@/images/save-icon.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </Button>
+                <Button fx:id="logoutButton" text="Logout" onAction="#handleLogout" styleClass="logout-button">
+                    <graphic>
+                        <ImageView fitWidth="20" fitHeight="20">
+                            <image>
+                                <Image url="@/images/logout-icon.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </Button>
+            </HBox>
+        </VBox> <!-- Corrected closing tag -->
+
+        <!-- Additional Info -->
+        <Label text="Additional Info" style="-fx-font-size: 20; -fx-fill: white; -fx-font-weight: bold;" />
+        <TextArea fx:id="additionalInfo" wrapText="true" prefHeight="150" prefWidth="600" promptText="Add any additional details here..." styleClass="text-area" />
+    </VBox>
+
+    <!-- Loading Indicator -->
+    <ProgressIndicator fx:id="loadingIndicator" visible="false" styleClass="loading-indicator" />
+</StackPane>

@@ -1,0 +1,13 @@
+com\placement\controllers\recruiter\RecruiterDashboardController.class
+com\placement\SceneManager.class
+com\placement\controllers\candidate\DashboardController.class
+com\placement\models\Offer.class
+com\placement\controllers\SignUpController.class
+com\placement\models\Recruiter.class
+com\placement\Main.class
+com\placement\services\AuthService.class
+com\placement\Dashboard.class
+com\placement\services\FirebaseService.class
+com\placement\controllers\LoginController.class
+com\placement\controllers\candidate\ProfileController.class
+com\placement\models\Candidate.class

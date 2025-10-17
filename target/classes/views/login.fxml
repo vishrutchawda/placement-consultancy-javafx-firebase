@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.Insets?>
+
+<VBox xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.placement.controllers.LoginController"
+      spacing="30" alignment="CENTER" prefWidth="500" styleClass="root">
+
+    <padding>
+        <Insets top="50" right="50" bottom="50" left="50" />
+    </padding>
+
+    <!-- Logo -->
+    <ImageView fitWidth="150" fitHeight="150">
+        <image>
+            <Image url="@/images/logo.png" />
+        </image>
+    </ImageView>
+
+    <!-- Welcome Text -->
+    <Text text="Welcome Back"
+          style="-fx-font-size: 32; -fx-fill: white; -fx-font-weight: bold;
+                 -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.3), 5, 0, 0, 2);" />
+
+    <!-- Login Form -->
+    <VBox style="-fx-background-color: #ffffff; -fx-background-radius: 20; -fx-padding: 30;
+                 -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 10, 0, 0, 5);"
+          spacing="20" alignment="CENTER">
+
+        <GridPane hgap="15" vgap="15" alignment="CENTER">
+            <Label text="Email:" GridPane.rowIndex="0" GridPane.columnIndex="0" styleClass="label" />
+            <TextField fx:id="emailField" GridPane.rowIndex="0" GridPane.columnIndex="1" prefWidth="300"
+                       promptText="Enter your email" styleClass="text-field" />
+
+            <Label text="Password:" GridPane.rowIndex="1" GridPane.columnIndex="0" styleClass="label" />
+            <PasswordField fx:id="passwordField" GridPane.rowIndex="1" GridPane.columnIndex="1" prefWidth="300"
+                           promptText="Enter your password" styleClass="text-field" />
+        </GridPane>
+
+        <!-- Centered Button -->
+        <VBox alignment="CENTER">
+            <Button text="Login" onAction="#handleLogin" styleClass="action-button" defaultButton="true">
+                <graphic>
+                    <ImageView fitWidth="20" fitHeight="20">
+                        <image>
+                            <Image url="@/images/login-icon.png" />
+                        </image>
+                    </ImageView>
+                </graphic>
+            </Button>
+        </VBox>
+    </VBox>
+
+    <!-- Links -->
+    <VBox spacing="10" alignment="CENTER">
+        <Hyperlink text="Forgot Password?" onAction="#handleForgotPassword" styleClass="custom-hyperlink" />
+        <Hyperlink text="Don't have an account? Sign Up" onAction="#handleSignUp" styleClass="custom-hyperlink" />
+    </VBox>
+</VBox>

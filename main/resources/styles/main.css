@@ -1,0 +1,239 @@
+.root {
+    -fx-font-family: "Segoe UI";
+    -fx-background-color: linear-gradient(to bottom right, #3498db, #2ecc71);
+    -fx-padding: 20;
+}
+
+.custom-hyperlink {
+    -fx-font-size: 16px;
+    -fx-text-fill: white;
+    -fx-transition: all 0.3s ease;
+}
+
+.custom-hyperlink:hover {
+    -fx-text-fill: #ecf0f1;
+    -fx-cursor: hand;
+    -fx-underline: true;
+}
+
+.button {
+    -fx-text-fill: white;
+    -fx-background-color: #2980b9;
+    -fx-background-radius: 10;
+    -fx-padding: 12 24 12 24;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 5, 0, 0, 2);
+    -fx-transition: all 0.3s ease;
+}
+
+.button:hover {
+    -fx-background-color: #3498db;
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+    -fx-cursor: hand;
+}
+
+.action-button {
+    -fx-background-color: #2ecc71;
+}
+
+.action-button:hover {
+    -fx-background-color: #27ae60;
+}
+
+.logout-button {
+    -fx-background-color: #e74c3c;
+}
+
+.logout-button:hover {
+    -fx-background-color: #c0392b;
+}
+
+.text-field, .combo-box, .text-area {
+    -fx-pref-width: 220px;
+    -fx-background-radius: 8;
+    -fx-background-color: #ffffff;
+    -fx-border-color: #bdc3c7;
+    -fx-border-radius: 8;
+    -fx-padding: 10;
+    -fx-font-size: 14px;
+    -fx-transition: all 0.3s ease;
+}
+
+.text-field:focused, .combo-box:focused, .text-area:focused {
+    -fx-border-color: #3498db;
+    -fx-border-width: 2;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 5, 0, 0, 1);
+}
+
+.combo-box .list-cell {
+    -fx-text-fill: #333;
+}
+
+.text-area {
+    -fx-pref-width: 100%;
+    -fx-background-color: #f9f9f9;
+}
+
+.label {
+    -fx-font-weight: bold;
+    -fx-text-fill: #2c3e50;
+    -fx-font-size: 14px;
+}
+
+.table-view {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #ecf0f1;
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+}
+
+.table-view .column-header {
+    -fx-background-color: #3498db;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-padding: 10;
+}
+
+.table-view .column-header-background {
+    -fx-background-radius: 10 10 0 0;
+}
+
+.table-view .table-cell {
+    -fx-padding: 10;
+    -fx-text-fill: #333;
+}
+
+.list-view {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #ecf0f1;
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+    -fx-padding: 5;
+}
+
+.list-view .list-cell {
+    -fx-padding: 10;
+    -fx-text-fill: #333;
+    -fx-background-color: transparent;
+}
+
+.list-view .list-cell:hover {
+    -fx-background-color: #ecf0f1;
+}
+
+.action-button {
+    -fx-alignment: center;
+    -fx-padding: 10px;
+}
+
+
+.root {
+    -fx-font-family: "Segoe UI";
+    -fx-background-color: linear-gradient(to bottom right, #3498db, #2ecc71);
+    -fx-padding: 20;
+}
+
+.custom-hyperlink {
+    -fx-font-size: 20px;
+    -fx-text-fill: white;
+    -fx-transition: all 0.3s ease;
+}
+
+.custom-hyperlink:hover {
+    -fx-text-fill: #ecf0f1;
+    -fx-cursor: hand;
+    -fx-underline: true;
+}
+
+.loading-indicator {
+    -fx-progress-color: #3498db; /* Matches your app's theme */
+    -fx-min-size: 50px;
+    -fx-max-size: 50px;
+}
+
+.button {
+    -fx-text-fill: white;
+    -fx-background-color: #2980b9;
+    -fx-background-radius: 10;
+    -fx-padding: 12 24 12 24;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 5, 0, 0, 2);
+    -fx-transition: all 0.3s ease;
+}
+
+.button:hover {
+    -fx-background-color: #3498db;
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+    -fx-cursor: hand;
+}
+
+/* Centered Login Button */
+.action-button {
+    -fx-background-color: #2ecc71;
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+    -fx-padding: 10px 20px;
+    -fx-background-radius: 10;
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 5, 0, 0, 2);
+}
+
+.action-button:hover {
+    -fx-background-color: #27ae60;
+}
+
+/* Input Fields */
+.text-field, .combo-box, .text-area {
+    -fx-pref-width: 220px;
+    -fx-background-radius: 8;
+    -fx-background-color: #ffffff;
+    -fx-border-color: #bdc3c7;
+    -fx-border-radius: 8;
+    -fx-padding: 10;
+    -fx-font-size: 14px;
+    -fx-transition: all 0.3s ease;
+}
+
+.text-field:focused, .combo-box:focused, .text-area:focused {
+    -fx-border-color: #3498db;
+    -fx-border-width: 2;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 5, 0, 0, 1);
+}
+
+/* Labels */
+.label {
+    -fx-font-weight: bold;
+    -fx-text-fill: #2c3e50;
+    -fx-font-size: 14px;
+}
+
+.table-view {
+    -fx-font-size: 14px;
+}
+
+.table-view .column-header {
+    -fx-background-color: #3f51b5;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+.table-row-cell:odd {
+    -fx-background-color: #f9f9f9;
+}
+
+.table-row-cell:selected {
+    -fx-background-color: #e3f2fd;
+}
+
+.table-view .table-cell {
+    -fx-alignment: center; /* Centers text within each cell */
+}
+
+/* Optional: Ensure column headers are centered too */
+.table-view .column-header .label {
+    -fx-alignment: center;
+}

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.image.*?>
+
+<StackPane xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.placement.controllers.recruiter.RecruiterDashboardController">
+    <VBox spacing="25" alignment="TOP_CENTER" styleClass="root" prefWidth="900">
+        <padding>
+            <Insets top="40" right="40" bottom="40" left="40" />
+        </padding>
+
+        <!-- Header -->
+        <HBox spacing="10" alignment="CENTER">
+            <ImageView fitWidth="40" fitHeight="40">
+                <image>
+                    <Image url="@/images/recruiter-icon.png" />
+                </image>
+            </ImageView>
+            <Text text="Recruiter Dashboard" style="-fx-font-size: 30; -fx-fill: white; -fx-font-weight: bold; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.3), 5, 0, 0, 2);" />
+        </HBox>
+
+        <!-- Filter Section -->
+        <HBox spacing="20" alignment="CENTER_LEFT" style="-fx-background-color: #ffffff; -fx-background-radius: 15; -fx-padding: 20; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 10, 0, 0, 5);">
+            <Label text="Min Marks:" styleClass="label" />
+            <TextField fx:id="minMarksField" prefWidth="120" promptText="e.g., 60" styleClass="text-field" />
+            <Label text="Qualification:" styleClass="label" />
+            <ComboBox fx:id="qualificationFilter" prefWidth="200" promptText="Select qualification" styleClass="combo-box" />
+            <Button text="Apply Filter" onAction="#handleFilter" styleClass="action-button">
+                <graphic>
+                    <ImageView fitWidth="20" fitHeight="20">
+                        <image>
+                            <Image url="@/images/filter-icon.png" />
+                        </image>
+                    </ImageView>
+                </graphic>
+            </Button>
+        </HBox>
+
+        <!-- Candidates Table -->
+        <TableView fx:id="candidatesTable" prefHeight="400" styleClass="table-view">
+            <columns>
+                <TableColumn fx:id="nameColumn" text="Name" prefWidth="250" />
+                <TableColumn fx:id="marksColumn" text="Marks" prefWidth="120" />
+                <TableColumn fx:id="qualificationColumn" text="Qualification" prefWidth="200" />
+                <TableColumn fx:id="cvColumn" text="CV" prefWidth="150" />
+            </columns>
+        </TableView>
+
+        <!-- Offers Table -->
+        <VBox spacing="10">
+            <Label text="Your Offers" style="-fx-font-size: 20; -fx-fill: white; -fx-font-weight: bold;" />
+            <TableView fx:id="offersTable" prefHeight="300" styleClass="table-view">
+                <columns>
+                    <TableColumn fx:id="candidateNameColumn" text="Candidate" prefWidth="250" />
+                    <TableColumn fx:id="offerStatusColumn" text="Status" prefWidth="150" />
+                    <TableColumn fx:id="salaryOfferColumn" text="Estimated Salary" prefWidth="150" />
+                </columns>
+            </TableView>
+        </VBox>
+
+        <!-- Action Buttons -->
+        <HBox spacing="20" alignment="CENTER">
+            <Button text="Hire Selected" onAction="#handleHire" styleClass="action-button">
+                <graphic>
+                    <ImageView fitWidth="20" fitHeight="20">
+                        <image>
+                            <Image url="@/images/hire-icon.png" />
+                        </image>
+                    </ImageView>
+                </graphic>
+            </Button>
+            <Button fx:id="logoutButton" text="Logout" onAction="#handleLogout" styleClass="logout-button">
+                <graphic>
+                    <ImageView fitWidth="20" fitHeight="20">
+                        <image>
+                            <Image url="@/images/logout-icon.png" />
+                        </image>
+                    </ImageView>
+                </graphic>
+            </Button>
+        </HBox>
+    </VBox>
+
+    <!-- Loading Indicator -->
+    <ProgressIndicator fx:id="loadingIndicator" visible="false" styleClass="loading-indicator" />
+</StackPane>
